@@ -5,6 +5,7 @@ import time
 
 # Define test functions for different functionalities.
 
+
 def test_add():
     """
     Test function to check the 'add' function with integer inputs.
@@ -17,7 +18,7 @@ def test_add_string():
     """
     Test function to check the 'add' function with string inputs.
     """
-    result = my_function.add(number_one="I love ", number_two="Sindh")  
+    result = my_function.add(number_one="I love ", number_two="Sindh")
     assert result == "I love Sindh"
 
 
@@ -37,6 +38,7 @@ def test_divide_by_zero():
     with pytest.raises(ValueError):
         my_function.divide(number_one=10, number_two=0)
 
+
 @pytest.mark.slow
 def test_very_slow():
     """
@@ -47,12 +49,14 @@ def test_very_slow():
     result = my_function.divide(number_one=10, number_two=5)
     assert result == 2
 
+
 @pytest.mark.skip(reason="This feature is broken for now")
 def test_new_add():
     """
     Test function marked as skipped with a reason.
     """
     assert my_function.add(number_one=1, number_two=2) == 3
+
 
 @pytest.mark.xfail(reason="We cannot divide by zero")
 def test_divide_by_zero_broken():

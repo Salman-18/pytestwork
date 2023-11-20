@@ -2,9 +2,9 @@ import pytest
 from src.school import ClassRoom, Teacher, Student, ToManyStudents
 
 # Fixture for creating a sample classroom with a teacher, students, and a course title.
+
+
 @pytest.fixture
-
-
 def sample_classroom():
     teacher = Teacher(name="Professor Dumbledore")
     students = [Student(name=f"Student {i+1}") for i in range(10)]
