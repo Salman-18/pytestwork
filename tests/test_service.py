@@ -32,6 +32,7 @@ def test_get_users(mock_get):
     data = service.get_users()
     assert data == {"id": 1, "name": "John Doe"}
 
+
 @mock.patch("requests.get")
 def test_get_users_error(mock_get):
     """
