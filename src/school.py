@@ -13,7 +13,7 @@ class ClassRoom():
         if len(self.students) <= 10:
             self.students.append(student)
         else:
-           raise ToManyStudents
+            raise ToManyStudents
 
 
     def remove_student(self, name):

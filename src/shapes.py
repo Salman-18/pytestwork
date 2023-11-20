@@ -19,7 +19,7 @@ class Circle(Shape):
     def __init__(self, radius) -> None:
         # Initialize with the radius.
         self.radius = radius
-   
+
     def area(self):
         # Calculate the area of the circle.
         return math.pi * self.radius **2
