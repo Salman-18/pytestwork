@@ -25,6 +25,7 @@ class TestCircle:
         print(f"Tear down method {method}")
         del self.circle
 
+    @pytest.mark.slow
     def test_area(self):
         """
         Test method to check if the 'area' method of the 'Circle' class calculates the area correctly.

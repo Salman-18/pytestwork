@@ -9,6 +9,7 @@ def test_area(my_rectangle):
     assert my_rectangle.area() == 10 * 20
 
 
+@pytest.mark.slow
 def test_perimeter(my_rectangle):
     """
     Test function to check if the 'perimeter' method of a rectangle calculates the correct perimeter.
