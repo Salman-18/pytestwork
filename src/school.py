@@ -15,18 +15,18 @@ class ClassRoom():
         else:
            raise ToManyStudents      
 
-  
+
     def remove_student(self, name):
         for student in self.students:
 
             if student.name == name:
                 self.students.remove(student)
                 break
-        
+
 
     def change_teacher(self, new_teacher):
         self.teacher = new_teacher
-              
+
 
 class Person:
     def __init__(self, name) -> None:
