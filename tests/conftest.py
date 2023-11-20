@@ -18,6 +18,7 @@ def my_rectangle():
 # Fixture to create another instance of the 'Rectangle' class with different length and width.
 # The 'other_rectangle' fixture is used for additional testing.
 
+
 @pytest.fixture
 def other_rectangle():
     return shapes.Rectangle(length=5, width=6)

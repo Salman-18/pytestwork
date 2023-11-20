@@ -4,6 +4,7 @@ import src.service as service
 import unittest.mock as mock
 import requests
 
+
 @mock.patch("src.service.get_user_from_db")
 def test_get_user_from_db(mock_get_user_from_db):
     """
@@ -14,6 +15,7 @@ def test_get_user_from_db(mock_get_user_from_db):
     # Call the function and check if the return value matches the mocked value.
     user_name = service.get_user_from_db(1)
     assert user_name == "Mocked Alice"
+
 
 @mock.patch("requests.get")
 def test_get_users(mock_get):
@@ -29,6 +31,7 @@ def test_get_users(mock_get):
     # Call the function and check if the returned data matches the expected value.
     data = service.get_users()
     assert data == {"id": 1, "name": "John Doe"}
+
 
 @mock.patch("requests.get")
 def test_get_users_error(mock_get):

@@ -5,6 +5,7 @@ import pytest
 import src.shapes as shapes
 import math
 
+
 class TestCircle:
     """
     Test class for the 'Circle' shape.
@@ -24,6 +25,7 @@ class TestCircle:
         print(f"Tear down method {method}")
         del self.circle
 
+    @pytest.mark.slow
     def test_area(self):
         """
         Test method to check if the 'area' method of the 'Circle' class calculates the area correctly.
