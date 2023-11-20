@@ -1,20 +1,24 @@
 class ToManyStudents(Exception):
     pass
 
+
 class ClassRoom():
     def __init__(self, teacher, students, course_title) -> None:
         self.teacher = teacher
         self.students = students
         self.course_title = course_title
-        
+
+
     def add_students(self, student):
         if len(self.students) <= 10:
             self.students.append(student)
+
         else:
-          raise ToManyStudents
+            raise ToManyStudents
       
     def remove_student(self, name):
         for student in self.students:
+
             if student.name == name:
                 self.students.remove(student)
                 break
