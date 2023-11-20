@@ -8,12 +8,12 @@ class ClassRoom():
         self.students = students
         self.course_title = course_title
 
- 
+
     def add_students(self, student):
         if len(self.students) <= 10:
             self.students.append(student)
         else:
-           raise ToManyStudents      
+           raise ToManyStudents
 
 
     def remove_student(self, name):
