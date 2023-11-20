@@ -12,15 +12,20 @@ database = {
 def get_user_from_db(user_id):
     return database.get(user_id)
 
+
 # Function to retrieve a list of users from a remote API.
+
+
 def get_users():
     # Make an HTTP GET request to a sample JSONPlaceholder API.
     response = requests.get("http://jsonplaceholder.typicode.com/users")
 
+
     # Check if the request was successful (status code 200).
     if response.status_code == 200:
-        # Parse and return the JSON content of the response.
+   # Parse and return the JSON content of the response.
         return response.json()
-    
+
+   
     # Raise an HTTPError if the request was not successful.
     raise requests.HTTPError
