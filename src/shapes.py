@@ -24,7 +24,6 @@ class Circle(Shape):
         # Calculate the area of the circle.
         return math.pi * self.radius ** 2
 
-
     def perimeter(self):
         # Calculate the perimeter (circumference) of the circle.
         return 2 * math.pi * self.radius
@@ -45,7 +44,6 @@ class Rectangle(Shape):
             return False
 
         return self.width == other.width and self.length == other.length
-
 
     def area(self):
         # Calculate the area of the rectangle.
