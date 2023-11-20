@@ -23,11 +23,11 @@ def get_users():
     response = requests.get("http://jsonplaceholder.typicode.com/users")
 
 
-   # Check if the request was successful (status code 200).
+    # Check if the request was successful (status code 200).
     if response.status_code == 200:
-   # Parse and return the JSON content of the response.
+    # Parse and return the JSON content of the response.
         return response.json()
 
-   
+
     # Raise an HTTPError if the request was not successful.
     raise requests.HTTPError

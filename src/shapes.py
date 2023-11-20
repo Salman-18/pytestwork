@@ -22,7 +22,7 @@ class Circle(Shape):
 
     def area(self):
         # Calculate the area of the circle.
-        return math.pi * self.radius **2
+        return math.pi * self.radius ** 2
 
 
     def perimeter(self):
@@ -56,6 +56,8 @@ class Rectangle(Shape):
         return (self.length * 2) + (self.width * 2)
 
 # Define a class 'Square' inheriting from 'Rectangle'.
+
+
 class Square(Rectangle):
     def __init__(self, side_length):
         # Call the __init__ method of the parent class (Rectangle).
